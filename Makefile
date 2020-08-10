@@ -4,5 +4,5 @@ all:
 test:
 	@docker run -it --rm -v $(PWD):/go-testing-practice --workdir="/go-testing-practice" golang:1.14-alpine ./scripts/test.sh
 
-with-docker:
+build:
 	@docker run -it --rm -v $(PWD):/go-testing-practice --workdir="/go-testing-practice" golang:1.14-alpine ./scripts/build.sh
